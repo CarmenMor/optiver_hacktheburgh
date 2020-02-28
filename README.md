@@ -29,14 +29,14 @@ The system is composed by:
   * The exchange, broadcasting through **UDP** the public information messages. To listen to this information,
     connect to:
     
-    ```ip: 178.62.36.224, port: 7001```
+    ```ip: 3.14.175.151, port: 7001```
     
     This is used for the following message types: ```PRICE``` and ```TRADE``` (see the protocol section for more info).
 
   * The exchange execution gateway, with which you communicate in order to send orders &mdash; and hopefully trade!
     To send orders to the exchange, and listen for a reply, connect to (also **UDP**):
     
-    ```ip: 178.62.36.224, port: 8001```
+    ```ip: 3.14.175.151, port: 8001```
     
     This is used for the following message types: ```ORDER``` and ```ORDER_ACK``` (see the protocol section for more info).
 
