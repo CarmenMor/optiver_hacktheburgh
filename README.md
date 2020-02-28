@@ -8,7 +8,7 @@ During this challenge, you will be listening to an exchange, analyse its data an
 if you'd like, develop an automated trading system. Of course you are also welcome to
 do whatever else comes to your mind! Use your imagination!
 
-The exchange is broadcasting prices and trades on two famous stock market indices:
+The exchange is broadcasting prices and trades on two famous stock market [indices](https://admiralmarkets.com/education/articles/general-trading/index-trading?regulator=fca):
 S&P500 (SP) and Eurostoxx (ESX). That means you see how the price changes over time for those indices,
 and what trades from the outside world are made (this is simulated). Your goal is to look at the data and come up with
 clever strategies to (hopefully) make money!
