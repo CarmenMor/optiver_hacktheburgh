@@ -2,7 +2,7 @@
 
 **VERY IMPORTANT**: Come by our booth to get login credentials for the exchange.
 
-Look at your positions here: http://18.197.147.155:5006/optitrade
+Look at your positions here: http://3.14.175.151:5006/optitrade
 
 During this challenge, you will be listening to an exchange, analyse its data and then,
 if you'd like, develop an automated trading system. Of course you are also welcome to
@@ -13,12 +13,6 @@ S&P500 (SP) and Eurostoxx (ESX). That means you see how the price changes over t
 and what trades from the outside world are made (this is simulated). Your goal is to look at the data and come up with
 clever strategies to (hopefully) make money!
 
-
-## Before you start
-
-Before you start, **have a look at [OptiverChallenge_HowTo.pdf](https://github.com/jundl77/optiver-optitrade-challenge/blob/master/OptiverChallenge_HowTo.pdf)** for some basic background knowledge on what an exchange is, how an order book works, and how you are supposed to interpret bid and ask prices that you recieve from the exchange.
-
-**Important:** We will go over this in our workshop at **13:40** in the **L3 Lecture Theater** as well in much more detail, so we very much encourage to stop by.
 
 Wanna know what we do? Watch this video: https://www.youtube.com/watch?v=gm7SrS9bs3s
 
@@ -56,8 +50,8 @@ The first file contains a few hours worth of price updates to the ```ESX-FUTURE`
 The second file contains trades that occurred on the exchange.
 
 You can find the files here in this repo:
-- ```market_data.csv```: [market_data.csv](https://github.com/jundl77/optiver-optitrade-challenge/blob/master/market_data.csv)
-- ```trades.csv```: [trades.csv](https://github.com/jundl77/optiver-optitrade-challenge/blob/master/trades.csv)
+- ```market_data.csv```: [market_data.csv](https://github.com/dovito/optiver_hacktheburgh/blob/master/market_data.csv)
+- ```trades.csv```: [trades.csv](https://github.com/dovito/optiver_hacktheburgh/blob/master/trades.csv)
 
 
 ### Measure Your Performance
@@ -65,7 +59,7 @@ You can find the files here in this repo:
 Trading is one thing, but of course you also want to know how much money you have made or lost, right?
 For that, it might be smart to track your own profit and loss (PnL), alongside your positions (which is your risk). You can visualize the order book, or come up with other metrics that can help you find an edge. Give it some thought.
 
-You can also look at your official PnL here: http://178.62.36.224:5006/optitrade
+You can also look at your official PnL here: http://3.14.175.151:5006/optitrade
 
 
 ### Bankruptcy [IMPORTANT]
@@ -85,7 +79,7 @@ The communication from and towards the exchange is done via a text-based, ASCII,
 Every message is specific to an *instrument*, identified by a *feedcode* (i.e. `SP-FUTURE` or `ESX-FUTURE`).
 Every message is composed by several fields separated by `|`.
 
-**Important**: Send ```TYPE=SUBSCRIPTION_REQUEST``` to ```ip: 188.166.115.7, port: 7001``` as the very first message in order to subscribe to the data feed.
+**Important**: Send ```TYPE=SUBSCRIPTION_REQUEST``` to ```ip: 3.14.175.151, port: 7001``` as the very first message in order to subscribe to the data feed.
 
 ### Info protocol specifications
 
