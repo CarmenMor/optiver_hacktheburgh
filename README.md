@@ -2,7 +2,7 @@
 
 **VERY IMPORTANT**: Come by our booth to get login credentials for the exchange.
 
-Look at your positions here: http://35179.45.135:5006/optitrade
+Look at your positions here: http://35.179.45.135:5006/optitrade
 
 During this challenge, you will be listening to an exchange, analyse its data and then,
 if you'd like, develop an automated trading system. Of course you are also welcome to
@@ -29,14 +29,14 @@ The system is composed by:
   * The exchange, broadcasting through **UDP** the public information messages. To listen to this information,
     connect to:
     
-    ```ip: 35179.45.135, port: 7001```
+    ```ip: 35.179.45.135, port: 7001```
     
     This is used for the following message types: ```PRICE``` and ```TRADE``` (see the protocol section for more info).
 
   * The exchange execution gateway, with which you communicate in order to send orders &mdash; and hopefully trade!
     To send orders to the exchange, and listen for a reply, connect to (also **UDP**):
     
-    ```ip: 35179.45.135, port: 8001```
+    ```ip: 35.179.45.135, port: 8001```
     
     This is used for the following message types: ```ORDER``` and ```ORDER_ACK``` (see the protocol section for more info).
 
@@ -59,7 +59,7 @@ You can find the files here in this repo:
 Trading is one thing, but of course you also want to know how much money you have made or lost, right?
 For that, it might be smart to track your own profit and loss (PnL), alongside your positions (which is your risk). You can visualize the order book, or come up with other metrics that can help you find an edge. Give it some thought.
 
-You can also look at your official PnL here: http://35179.45.135:5006/optitrade
+You can also look at your official PnL here: http://35.179.45.135:5006/optitrade
 
 
 ### Bankruptcy [IMPORTANT]
@@ -79,7 +79,7 @@ The communication from and towards the exchange is done via a text-based, ASCII,
 Every message is specific to an *instrument*, identified by a *feedcode* (i.e. `SP-FUTURE` or `ESX-FUTURE`).
 Every message is composed by several fields separated by `|`.
 
-**Important**: Send ```TYPE=SUBSCRIPTION_REQUEST``` to ```ip: 35179.45.135, port: 7001``` as the very first message in order to subscribe to the data feed.
+**Important**: Send ```TYPE=SUBSCRIPTION_REQUEST``` to ```ip: 35.179.45.135, port: 7001``` as the very first message in order to subscribe to the data feed.
 
 ### Info protocol specifications
 
